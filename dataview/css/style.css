@@ -1,0 +1,72 @@
+
+#map {
+    width: 100%;
+}
+
+.mg-line6-color {
+    stroke: steelblue;
+}
+
+.mg-area5-color {
+    fill: steelblue;
+}
+
+.mg-hover-line6-color {
+    fill: steelblue;
+}
+
+.mg-line6-legend-color {
+    color: steelblue;
+}
+
+.mg-line7-color {
+    stroke: burlywood;
+}
+
+.mg-area7-color {
+    fill: burlywood;
+}
+
+.mg-hover-line7-color {
+    fill: burlywood;
+}
+
+.mg-line7-legend-color {
+    color: burlywood;
+}
+
+.mg-line8-color {
+    stroke: violet;
+}
+
+.mg-area8-color {
+    fill: violet;
+}
+
+.mg-hover-line8-color {
+    fill: violet;
+}
+
+.mg-line8-legend-color {
+    color: violet;
+}
+
+.mg-line9-color {
+    stroke: cyan;
+}
+
+.mg-area9-color {
+    fill: cyan;
+}
+
+.mg-hover-line9-color {
+    fill: cyan;
+}
+
+.mg-line9-legend-color {
+    color: cyan;
+}
+
+.mg-markers text {
+    font-size: 1.0rem;
+}

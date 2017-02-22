@@ -1,0 +1,91 @@
+<html lang="en">
+<!--
+	    ____       __  __           _  __                  
+   / __ )___  / /_/ /____  ____| |/ / ____  _________ _
+  / __  / _ \/ __/ __/ _ \/ ___/   / / __ \/ ___/ __ `/
+ / /_/ /  __/ /_/ /_/  __/ /  /   |_/ /_/ / /  / /_/ / 
+/_____/\___/\__/\__/\___/_/  /_/|_(_)____/_/   \__, /  
+                                              /____/   
+
+	
+	Contact: elias@betterx.org
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>BetterX Data Viewer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="css/metricsgraphics.css" rel="stylesheet">
+    <link href="css/mg_line_brushing.css" rel="stylesheet">
+    <link href="css/waitMe.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body style="padding-top: 20px;padding-bottom: 20px;">
+    <div class="container-fluid">
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="user_id" class="control-label">UserID</label>
+        <select class="form-control input-sm" id="user_id" onchange="app.selectUser()">
+          <option value="">Select UserID</option>
+        </select>
+      </div>
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="day" class="control-label">Day</label>
+        <select class="form-control input-sm" id="day" onchange="app.selectDay()">
+          <option value="">Select Day</option>
+        </select>
+      </div>
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="min" class="control-label">Min (Optional)</label>
+        <input id="min" type="text" class="form-control input-sm">
+      </div>
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="max" class="control-label">Max (Optional)</label>
+        <input id="max" type="text" class="form-control input-sm">
+      </div>
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="filesMode" class="control-label">Mode</label>
+        <select class="form-control input-sm" id="filesMode">
+          <option value="one" selected>One line</option>
+          <option value="multi">Multi-line</option>
+        </select>
+      </div>
+      <div class="form-group col-xs-2 col-md-2" id="filesDiv">
+        <label for="files" class="control-label">Files</label>
+        <select class="form-control input-sm" id="files" multiple="multiple"></select>
+      </div>
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="showGraph" class="control-label">&nbsp;</label>
+        <button class="form-control btn btn-primary" id="showGraph" onclick="app.showGraphs()">Graph</button>
+      </div>
+      <div class="form-group col-xs-1 col-md-1">
+        <label for="showMap" class="control-label">&nbsp;</label>
+        <button class="form-control btn btn-primary" id="showMap" onclick="app.startMap()">Map</button>
+      </div>
+    </div>
+    <div class="container-fluid" id="results">
+      <div class="row">
+        <div id="map"></div>
+      </div>
+    </div>
+    <script src="lib/jquery-2.2.1.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/metricsgraphics.min.js"></script>
+    <script src="lib/mg_line_brushing.js"></script>
+    <script src="lib/waitMe.min.js"></script>
+    <script src="lib/notie.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/bootstrap-datetimepicker.min.js"></script>
+    <script src="lib/bootstrap-multiselect.js"></script>
+    <script src="app.js"></script>
+    <script src="app/graph.js"></script>
+    <script src="app/map.js"></script>
+    <script>
+      var app = new App();
+      app.load();
+    </script>
+  </body>
+</html>
