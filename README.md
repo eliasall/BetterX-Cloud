@@ -16,6 +16,21 @@ PHP back-end app which uses mysql to store and send messages to android users us
 * betterX_labs_data_import.py & betterX_labs_attributes.py   _loads lab-data json files in mysql_
 * betterX_user-story-daily-files.py  _builds user daily story files which are viewed by the [Web Metrics Viewer](https://github.com/eliasall/BetterX-Cloud/tree/master/dataview)_
 
+### Referencing
+Usage of any parts of this software or data requires referencing in any published or publicised work. The correct referencing is presented below in Harvard, MLA8 and APA styles.
+ 
+Harvard
+
+`Allayiotis, E. (2017) BetterX System. N.A: BetterX.org.`
+ 
+MLA8
+
+`Allayiotis, Elias. “BetterX System.” 23 Feb. 2017, www.betterx.org.`
+ 
+APA
+
+`Allayiotis, E. (2017). BetterX System (Version 1.2). [Application software]. Retrieved from <http://www.betterx.org/>`
+
 ### License
 Anyone interested in this project can download/modify/contribute to the source code that is made available.   The BetterX project is licenced under the Apache License, Version 2.0
 
